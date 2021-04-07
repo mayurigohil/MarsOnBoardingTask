@@ -1,0 +1,10 @@
+﻿2021-04-07T23:47:18.7329395+12:00;Thread#1;Info;Reading test run result from Json file "C:\Users\Dell\AppData\Local\Temp\c50ee62d-3431-4a18-8943-1be0ce880ac0".
+2021-04-07T23:47:18.7359402+12:00;Thread#1;Info;Successfully read test run result from Json file "C:\Users\Dell\AppData\Local\Temp\c50ee62d-3431-4a18-8943-1be0ce880ac0"
+2021-04-07T23:47:18.7359402+12:00;Thread#1;Info;Deserializing test run result
+2021-04-07T23:47:19.3165091+12:00;Thread#1;Info;Successfully deserialized test run result
+2021-04-07T23:47:19.3165091+12:00;Thread#1;Info;Loading test run result
+2021-04-07T23:47:19.3485132+12:00;Thread#1;Info;Successfully loaded test run result
+2021-04-07T23:47:19.3585077+12:00;Thread#1;Info;creating 1 report(s)
+2021-04-07T23:47:19.3585077+12:00;Thread#1;Info;generate Report using template ReportTemplate.cshtml
+2021-04-07T23:47:20.3564466+12:00;Thread#1;Info;Finished generating reports.
+========== End of log file ==========
