@@ -60,7 +60,6 @@ namespace MarsOnboardingTask.Pages
         {
             this.driver = driver;
             WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
-            //Thread.Sleep(500);
             Assert.That(Notification.Text == "Description has been saved successfully");
         }
 
@@ -75,9 +74,12 @@ namespace MarsOnboardingTask.Pages
 
         public void ValidateAddLanguageDetails(IWebDriver driver)
         {
-            WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
+            this.driver = driver;
+            Thread.Sleep(300);
             String Language = NameSaved.Text;
-            TestContext.WriteLine(Language);
+            TestContext.Out.WriteLine(Language);
+            TestContext.Out.WriteLine(Notification.Text);
+            // WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
             Assert.That(Notification.Text == Language + " " + "has been added to your languages");
         }
         public void EditLanguageDetails(IWebDriver driver)
@@ -91,9 +93,10 @@ namespace MarsOnboardingTask.Pages
         }
         public void ValidateEditLanguageDetails(IWebDriver driver)
         {
-            WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
+            this.driver = driver;
             String Language = NameSaved.Text;
             TestContext.WriteLine(Language);
+            WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
             Assert.That(Notification.Text == Language + " " + "has been updated to your languages");
         }
         public void DeleteLanguageDetails(IWebDriver driver)
@@ -117,8 +120,10 @@ namespace MarsOnboardingTask.Pages
 
         public void ValidateAddSkillDetails(IWebDriver driver)
         {
-            WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
+            this.driver = driver;
+            WaitClass.ElementPresent(driver, "XPath", "//div[@class='ui bottom attached tab segment tooltip-target active']//tbody[1]/tr[1]/td[1]");
             String Skills = SkillSaved.Text;
+            WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
             TestContext.WriteLine(Skills);
             Assert.That(Notification.Text == Skills + " " + "has been added to your skills");
         }
@@ -135,9 +140,10 @@ namespace MarsOnboardingTask.Pages
 
         public void ValidateEditSkillDetails(IWebDriver driver)
         {
-            WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
+            this.driver = driver;
             String Skills = SkillSaved.Text;
             TestContext.WriteLine(Skills);
+            WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
             Assert.That(Notification.Text == Skills + " " + "has been updated to your skills");
         }
         public void DeleteSkillDetails(IWebDriver driver)
@@ -165,6 +171,7 @@ namespace MarsOnboardingTask.Pages
         }
         public void ValidateEducationDetails(IWebDriver driver)
         {
+            this.driver = driver;
             WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
             Assert.That(Notification.Text == "Education has been added");
         }
@@ -173,7 +180,7 @@ namespace MarsOnboardingTask.Pages
         public void CertificationDetails(IWebDriver driver)
         {
             this.driver = driver;
-            WaitClass.ElementPresent(driver, "XPath", "//*[@class='item'][text()='Certifications']");
+          //  WaitClass.ElementPresent(driver, "XPath", "//*[@class='item'][text()='Certifications']");
             NavigateCertification.Click();
             AddCertifications.Click();
             Certificate.SendKeys("Javga");
@@ -183,9 +190,10 @@ namespace MarsOnboardingTask.Pages
         }
         public void ValidateCertificationDetails(IWebDriver driver)
         {
-            WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
+            this.driver = driver;
             String Certifcate = CertifcationSaved.Text;
             TestContext.WriteLine(Certifcate);
+            WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
             Assert.That(Notification.Text == Certifcate + " " + "has been added to your certification");
         }
     }

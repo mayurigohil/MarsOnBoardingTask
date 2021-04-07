@@ -1,39 +1,35 @@
-﻿using System;
+﻿using MarsOnboardingTask.Pages;
+using MarsOnboardingTask.Utility;
+using System;
 using TechTalk.SpecFlow;
 
 namespace MarsOnboardingTask.StepDefinitions
 {
     [Binding]
-    public class DeleteProfileSteps
+    class DeleteProfileSteps:CommonDriver
     {
         [Given(@"User logged in to Mars")]
         public void GivenUserLoggedInToMars()
         {
-            ScenarioContext.Current.Pending();
+            Login Obj1 = new Login();
+            Obj1.LoginPage(driver);
+            
         }
-        
-        [When(@"Delete Language")]
-        public void WhenDeleteLanguage()
+
+        [Then(@"Deletes the Language")]
+        public void ThenDeletesTheLanguage()
         {
-            ScenarioContext.Current.Pending();
+            ProfilePage obj10 = new ProfilePage();
+            obj10.DeleteLanguageDetails(driver);
         }
-        
-        [When(@"Delete skill")]
-        public void WhenDeleteSkill()
+
+        [Then(@"Deletes the Skill")]
+        public void ThenDeletesTheSkill()
         {
-            ScenarioContext.Current.Pending();
+            ProfilePage obj11 = new ProfilePage();
+            obj11.DeleteSkillDetails(driver);
         }
-        
-        [Then(@"Language is deleted")]
-        public void ThenLanguageIsDeleted()
-        {
-            ScenarioContext.Current.Pending();
-        }
-        
-        [Then(@"skill is deleted")]
-        public void ThenSkillIsDeleted()
-        {
-            ScenarioContext.Current.Pending();
-        }
+
+
     }
 }

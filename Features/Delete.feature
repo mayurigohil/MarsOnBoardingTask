@@ -5,20 +5,18 @@
 
 Scenario: Delete Languages
 	Given  User logged in to Mars
-	When Delete Language
-	Then Language is deleted
+	Then Deletes the Language
 
 Scenario: Delete skill
 	Given User logged in to Mars
-	When Delete skill
-	Then skill is deleted
+	Then Deletes the Skill
 
-Scenario: Delete Certification
-	Given User logged in to Mars
-	When Delete Certification
-	Then skill is Certification
-
-Scenario: Delete Education
-	Given User logged in to Mars
-	When Delete Education
-	Then skill is Education
+#Scenario: Delete Certification
+#	Given User logged in to Mars
+#	When Delete Certification
+#	Then skill is Certification
+#
+#Scenario: Delete Education
+#	Given User logged in to Mars
+#	When Delete Education
+#	Then skill is Education
