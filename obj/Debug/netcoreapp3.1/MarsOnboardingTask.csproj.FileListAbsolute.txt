@@ -333,3 +333,8 @@ C:\Users\Dell\Documents\VB Feb 2021\MarsOnboardingTask\MarsOnboardingTask\obj\De
 C:\Users\Dell\Documents\VB Feb 2021\MarsOnboardingTask\MarsOnboardingTask\obj\Debug\netcoreapp3.1\MarsOnboardingTask.pdb
 C:\Users\Dell\Documents\VB Feb 2021\MarsOnboardingTask\MarsOnboardingTask\obj\Debug\netcoreapp3.1\MarsOnboardingTask.genruntimeconfig.cache
 C:\Users\Dell\Documents\VB Feb 2021\MarsOnboardingTask\MarsOnboardingTask\obj\Debug\netcoreapp3.1\MarsOnboardingTask.csprojAssemblyReference.cache
+C:\Users\Dell\Documents\VB Feb 2021\MarsOnboardingTask\MarsOnboardingTask\bin\Debug\netcoreapp3.1\ExcelDataReader.dll
+C:\Users\Dell\Documents\VB Feb 2021\MarsOnboardingTask\MarsOnboardingTask\bin\Debug\netcoreapp3.1\ExcelDataReader.DataSet.dll
+C:\Users\Dell\Documents\VB Feb 2021\MarsOnboardingTask\MarsOnboardingTask\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Dell\Documents\VB Feb 2021\MarsOnboardingTask\MarsOnboardingTask\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\Dell\Documents\VB Feb 2021\MarsOnboardingTask\MarsOnboardingTask\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll

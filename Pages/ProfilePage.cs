@@ -75,11 +75,11 @@ namespace MarsOnboardingTask.Pages
         public void ValidateAddLanguageDetails(IWebDriver driver)
         {
             this.driver = driver;
-            Thread.Sleep(300);
+            WaitClass.ElementPresent(driver, "CssSelector", "tbody tr td:nth-child(1)");
             String Language = NameSaved.Text;
             TestContext.Out.WriteLine(Language);
             TestContext.Out.WriteLine(Notification.Text);
-            // WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
+            WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
             Assert.That(Notification.Text == Language + " " + "has been added to your languages");
         }
         public void EditLanguageDetails(IWebDriver driver)
@@ -94,6 +94,7 @@ namespace MarsOnboardingTask.Pages
         public void ValidateEditLanguageDetails(IWebDriver driver)
         {
             this.driver = driver;
+            WaitClass.ElementPresent(driver, "CssSelector", "tbody tr td:nth-child(1)");
             String Language = NameSaved.Text;
             TestContext.WriteLine(Language);
             WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
@@ -102,6 +103,7 @@ namespace MarsOnboardingTask.Pages
         public void DeleteLanguageDetails(IWebDriver driver)
         {
             this.driver = driver;
+            WaitClass.ElementPresent(driver, "CssSelector", "tbody tr td:nth-child(1)");
             String Language = NameSaved.Text;
             DeleteLanguage.Click();
             WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
@@ -141,6 +143,7 @@ namespace MarsOnboardingTask.Pages
         public void ValidateEditSkillDetails(IWebDriver driver)
         {
             this.driver = driver;
+            WaitClass.ElementPresent(driver, "XPath", "//div[@class='ui bottom attached tab segment tooltip-target active']//tbody[1]/tr[1]/td[1]");
             String Skills = SkillSaved.Text;
             TestContext.WriteLine(Skills);
             WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
@@ -149,6 +152,7 @@ namespace MarsOnboardingTask.Pages
         public void DeleteSkillDetails(IWebDriver driver)
         {
             this.driver = driver;
+            WaitClass.ElementPresent(driver, "XPath", "//div[@class='ui bottom attached tab segment tooltip-target active']//tbody[1]/tr[1]/td[1]");
             String Skills = SkillSaved.Text;
             DeleteSkill.Click();
             WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");
@@ -191,6 +195,7 @@ namespace MarsOnboardingTask.Pages
         public void ValidateCertificationDetails(IWebDriver driver)
         {
             this.driver = driver;
+            WaitClass.ElementPresent(driver, "XPath", "///div[@class='ui bottom attached tab segment tooltip-target active']//tbody");
             String Certifcate = CertifcationSaved.Text;
             TestContext.WriteLine(Certifcate);
             WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");

@@ -25,11 +25,13 @@ namespace MarsOnboardingTask.Pages
             driver.Manage().Window.Maximize();
             WaitClass.ElementPresent(driver, "XPath", "//a[normalize-space()='Sign In']");
             SignIn.Click();
-            EmailAddress.SendKeys("Mayuri00gohil@gmail.com");
-            Password.SendKeys("Mayuri@123");
+            driver.SwitchTo().ActiveElement();
+            ExcelLibHelper.PopulateInDataCollection(@"C:\Users\Dell\Documents\VB Feb 2021\MarsOnboardingTask\MarsOnboardingTask\Data\TestData.xlsx");
+            EmailAddress.SendKeys(ExcelLibHelper.ReadData(2, "username"));
+            Password.SendKeys(ExcelLibHelper.ReadData(2,"password"));
             LoginBtn.Click();
-            Thread.Sleep(2000);
-           // WaitClass.ElementPresent(driver, "XPath", "//a[normalize-space()='Share Skill']");
+            Thread.Sleep(3000);
+            WaitClass.ElementPresent(driver, "CssSelector", "i[class='outline write icon']");
         }
     }
 }

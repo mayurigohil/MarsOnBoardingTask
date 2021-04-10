@@ -22,7 +22,7 @@ namespace MarsOnboardingTask.Tests
         protected ExtentTest _test;
         protected ExtentReports _extent;
         public IWebDriver _driver;
-        [OneTimeSetUp]
+       // [OneTimeSetUp]
         protected void Setup()
         {
             var path = System.Reflection.Assembly.GetCallingAssembly().CodeBase;
@@ -37,7 +37,7 @@ namespace MarsOnboardingTask.Tests
             _extent.AddSystemInfo("Environment", "QA");
             _extent.AddSystemInfo("UserName", "TestUser");
         }
-        [OneTimeTearDown]
+        //[OneTimeTearDown]
         protected void TearDown()
         {
             _extent.Flush();
@@ -111,6 +111,14 @@ namespace MarsOnboardingTask.Tests
             ProfilePage obj11 = new ProfilePage();
             obj11.EditSkillDetails(driver);
             obj11.ValidateEditSkillDetails(driver);
+        }
+        [Test]
+        public void DeleteSkills()
+        {
+            Login Obj1 = new Login();
+            Obj1.LoginPage(driver);
+            ProfilePage obj11 = new ProfilePage();
+            obj11.DeleteSkillDetails(driver);
         }
         [Test]
         public void AddEducation()
