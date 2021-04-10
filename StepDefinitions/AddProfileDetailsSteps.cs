@@ -86,5 +86,12 @@ namespace MarsOnboardingTask.StepDefinitions
             ProfilePage obj7 = new ProfilePage();
             obj7.ValidateCertificationDetails(driver);
         }
+        
+        [AfterScenario]
+        public void ClosseBrowser()
+
+        {
+            driver.Quit();
+        }
     }
 }
