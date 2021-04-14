@@ -7,7 +7,7 @@ using TechTalk.SpecFlow;
 namespace MarsOnboardingTask.StepDefinitions
 {
     [Binding]
-    class AddProfileDetailsSteps : CommonDriver
+    class AddProfileDetailsSteps: CommonDriver
 
     {
        
