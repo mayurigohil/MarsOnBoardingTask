@@ -195,7 +195,7 @@ namespace MarsOnboardingTask.Pages
         public void ValidateCertificationDetails(IWebDriver driver)
         {
             this.driver = driver;
-            WaitClass.ElementPresent(driver, "XPath", "///div[@class='ui bottom attached tab segment tooltip-target active']//tbody");
+            WaitClass.ElementPresent(driver, "XPath", "//div[@class='ui bottom attached tab segment tooltip-target active']//tbody");
             String Certifcate = CertifcationSaved.Text;
             TestContext.WriteLine(Certifcate);
             WaitClass.ElementPresent(driver, "ClassName", "ns-box-inner");

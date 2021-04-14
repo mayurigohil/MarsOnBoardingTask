@@ -9,7 +9,7 @@ using System.Collections;
 using System.Threading;
 using MarsOnboardingTask.Pages;
 using MarsOnboardingTask.Utility;
-using MarsOnboardingTask.Hooks;
+//using MarsOnboardingTask.Hooks;
 using AventStack.ExtentReports.Reporter;
 using AventStack.ExtentReports;
 using NUnit.Framework.Interfaces;

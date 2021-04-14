@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8yWadeSBz+M6I2ZV5e9yEDFnBcFEOKt6MLcE2rIxUImFCUHPduzN0fFwV3GaFwzteRJkpCqgVf4M6GHAHxKJTQ==",
+  "dgSpecHash": "d69qFaPkXcrrXuCnP95Wb4dCJGUlTC3gRbkImaWfQ7e4MfmQxw5hsk98R/ffcWVhUSA67ml6PhiaSdDq8XX4+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\Documents\\VB Feb 2021\\MarsOnboardingTask\\MarsOnboardingTask\\MarsOnboardingTask.csproj",
   "expectedPackageFiles": [
@@ -112,6 +112,7 @@
     "C:\\Users\\Dell\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\selenium.webdriver.chromedriver\\89.0.4389.2300\\selenium.webdriver.chromedriver.89.0.4389.2300.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\sharpcompress\\0.23.0\\sharpcompress.0.23.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\specflow\\3.7.13\\specflow.3.7.13.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\specflow.plus.livingdocplugin\\3.7.10\\specflow.plus.livingdocplugin.3.7.10.nupkg.sha512",
